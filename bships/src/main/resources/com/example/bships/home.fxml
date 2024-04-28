@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #DDF5F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bships.Control">
+   <children>
+      <AnchorPane layoutX="150.0" layoutY="637.0" />
+      <Button layoutX="212.0" layoutY="439.0" mnemonicParsing="false" onAction="#initialize" prefHeight="66.0" prefWidth="206.0" style="-fx-background-color: WHITE;" text="START" textFill="#0f2853">
+         <font>
+            <Font name="Book Antiqua" size="28.0" />
+         </font>
+         <effect>
+            <InnerShadow height="84.17" radius="25.7925" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="472.0" fitWidth="718.0" layoutX="-15.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/battleship.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="177.0" layoutY="339.0" prefHeight="86.0" prefWidth="275.0" text="BATTLESHIP" textFill="#f2ecec">
+         <font>
+            <Font name="Book Antiqua" size="44.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button layoutX="212.0" layoutY="525.0" mnemonicParsing="false" onAction="#rules" prefHeight="66.0" prefWidth="206.0" style="-fx-background-color: WHITE;" text="RULES" textFill="#0f2853">
+         <font>
+            <Font name="Book Antiqua" size="28.0" />
+         </font>
+         <effect>
+            <InnerShadow height="84.17" radius="25.7925" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

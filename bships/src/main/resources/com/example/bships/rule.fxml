@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #DDF5F4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bships.Control">
+   <children>
+      <AnchorPane layoutX="150.0" layoutY="637.0">
+         <effect>
+            <SepiaTone>
+               <input>
+                  <Glow />
+               </input>
+            </SepiaTone>
+         </effect></AnchorPane>
+      <ImageView fitHeight="214.0" fitWidth="220.0" layoutX="27.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/map.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="418.0" prefWidth="574.0" text="Welcome to naval battleground !&#10;&#10;This 2 player game has 2 phases&#10;&#10;Phase 1: Ship Placement Phase&#10;Each player will be given their own sea map where they&#10;have to place their ships. Opponent will not know where&#10;the ships are placed.&#10;&#10;Phase 2: Attack Phase&#10;Each player will be given chance to attack the opponent&#10;sea map by turn. If player can make the correct guess &#10;and hit opponent's ship, another chance will be given to&#10;hit. If not, it is the opponent's turn&#10;  " textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="426.0" prefHeight="190.0" prefWidth="305.0" text="Each player has 3 kinds of ships:&#10;1 Battleship (3 tiles)&#10;2 Destroyers (2 tiles)&#10;3 Submarines (1 tile)&#10;&#10;Ships must be placed either vertically &#10;or horizontally!&#10;Ships must not overlap!" textAlignment="CENTER" textFill="#3524b7">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="244.0" layoutY="420.0" prefHeight="5.0" prefWidth="342.0" />
+      <Separator layoutX="27.0" layoutY="46.0" prefHeight="6.0" prefWidth="550.0" />
+      <Button layoutX="254.0" layoutY="647.0" mnemonicParsing="false" onAction="#goback" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #000000;" text="GOT IT" textFill="#fffdfd">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow height="93.52" radius="22.88" width="0.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <Bloom threshold="0.95" />
+   </effect>
+</AnchorPane>
